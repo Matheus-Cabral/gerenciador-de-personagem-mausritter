@@ -1,77 +1,102 @@
-# Mausritter Character Manager
+# Gerenciador de Personagens Mausritter
 
-A modern, interactive character manager for the Mausritter tabletop RPG, built with React and TypeScript.
+Um gerenciador de personagens moderno e interativo para o RPG de mesa Mausritter, construído com React e TypeScript.
 
-## Try it Out!
-[Try the character manager here](https://chippolot.github.io/mausritter-character-manager/)
+## Experimente!
 
-## Features
+[Experimente o gerenciador de personagens aqui](https://matheus-cabral.github.io/gerenciador-de-personagem-mausritter/)
 
-- **Character Management**: Create, edit, and manage multiple mouse characters
-- **Random Character Generation**: Step-by-step wizard following official Mausritter rules
-- **Tactile Inventory System**: Drag-and-drop grid-based inventory with multiple item sizes (1x1, 2x1, 1x2, 2x2)
-- **Complete Character Details**: Track stats, background, appearance, equipment, and hirelings
-- **Character Status**: Mark characters as alive/dead with visual indicators
-- **Persistent Storage**: Characters saved automatically to local storage
+## Funcionalidades
 
-## Getting Started
+- **Gerenciamento de Personagens**: Crie, edite e gerencie múltiplos personagens
+- **Geração Aleatória de Personagens**: Assistente passo a passo seguindo as regras oficiais do Mausritter
+- **Sistema de Inventário Tátil**: Inventário baseado em grid com arrastar-e-soltar e múltiplos tamanhos de itens (1x1, 2x1, 1x2, 2x2)
+- **Detalhes Completos do Personagem**: Acompanhe status, antecedentes, aparência, equipamento e contratados
+- **Status do Personagem**: Marque personagens como vivos/mortos com indicadores visuais
+- **Armazenamento Persistente**: Personagens salvos automaticamente no armazenamento local
 
-### Prerequisites
+## Começando
 
-- Node.js (version 20.19+ or 22.12+)
-- npm or yarn
+### Pré-requisitos
 
-### Installation
+- Node.js (versão 20.19+ ou 22.12+)
+- npm ou yarn
 
-1. Clone the repository:
+### Instalação
+
+1. Clone o repositório:
    ```bash
-   git clone https://github.com/chippolot/mausritter-character-manager.git
-   cd mausritter-character-manager
+   git clone https://github.com/Matheus-Cabral/gerenciador-de-personagem-mausritter.git
+   cd gerenciador-de-personagem-mausritter
    ```
 
-2. Install dependencies:
+2. Instale as dependências:
    ```bash
    npm install
    ```
 
-3. Start the development server:
+3. Inicie o servidor de desenvolvimento:
    ```bash
    npm run dev
    ```
 
-4. Open your browser and navigate to `http://localhost:5173`
+4. Abra seu navegador e acesse `http://localhost:5173`
 
-### Building for Production
+### Build para Produção
 
 ```bash
 npm run build
 ```
 
-### Deployment to GitHub Pages
+### Deploy para GitHub Pages
 
-```bash
-npm run deploy
-```
+1. **Importante**: Antes de fazer o deploy, atualize o caminho base no arquivo `vite.config.ts` para corresponder ao nome do seu repositório:
 
-## Usage
+   ```typescript
+   // vite.config.ts
+   export default defineConfig(({ command }) => ({
+     plugins: [react()],
+     base: command === 'build' ? '/nome-do-seu-repositorio/' : '/',
+   }))
+   ```
 
-1. **Creating Characters**: Use the "Generate Random Character" button for rule-compliant generation, or "Create Blank Character" for manual setup
-2. **Inventory Management**: Drag items between inventory slots, scratch area, and character equipment
-3. **Character Details**: Edit all character information directly in the interface
-4. **Multiple Characters**: Switch between characters using the character selector
+   Substitua `/nome-do-seu-repositorio/` pelo nome exato do seu repositório GitHub.
 
-## Technology Stack
+2. Execute o deploy:
+   ```bash
+   npm run deploy
+   ```
 
-- **React 19** - UI framework
-- **TypeScript** - Type safety
-- **Vite** - Build tool and dev server
-- **Tailwind CSS** - Styling
-- **Zustand** - State management
-- **@dnd-kit** - Drag and drop functionality
+   Este comando irá:
+   - Criar o build de produção
+   - Publicar automaticamente no GitHub Pages via pacote `gh-pages`
+
+3. **Configuração no GitHub** (se necessário):
+   - Acesse: `https://github.com/seu-usuario/seu-repositorio/settings/pages`
+   - Em **Source**, selecione **Deploy from a branch**
+   - Em **Branch**, selecione **gh-pages** e **/(root)**
+   - Clique em **Save**
+
+4. Sua aplicação estará disponível em: `https://seu-usuario.github.io/nome-do-seu-repositorio/`
+
+## Uso
+
+1. **Criar Personagens**: Use o botão "Generate Random Character" para geração seguindo as regras, ou "Create Blank Character" para configuração manual
+2. **Gerenciamento de Inventário**: Arraste itens entre slots do inventário, área de rascunho e equipamento do personagem
+3. **Detalhes do Personagem**: Edite todas as informações do personagem diretamente na interface
+4. **Múltiplos Personagens**: Alterne entre personagens usando o seletor de personagens
+
+## Stack Tecnológico
+
+- **React 19** - Framework UI
+- **TypeScript** - Tipagem estática
+- **Vite** - Build tool e dev server
+- **Tailwind CSS** - Estilização
+- **Zustand** - Gerenciamento de estado
+- **@dnd-kit** - Funcionalidade de arrastar e soltar
 
 ## Legal
 
-This work is based on [Mausritter](https://mausritter.com), a product of Losing Games and Isaac Williams, and is licensed for use under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) licence.
-This project is not affiliated with or endorsed by Losing Games.
-
-Compatible with Mausritter.
+Este trabalho é baseado em [Mausritter](https://mausritter.com), um produto de Losing Games e Isaac Williams, e é licenciado para uso sob a licença [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+Este projeto não é afiliado ou endossado por Losing Games.
+Compatível com Mausritter.
