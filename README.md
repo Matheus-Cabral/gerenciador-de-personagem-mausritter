@@ -1,5 +1,7 @@
 # Gerenciador de Personagens Mausritter
 
+> **Créditos**: Este projeto é uma tradução/adaptação do projeto original [mausritter-character-manager](https://github.com/chippolot/mausritter-character-manager) criado por [chippolot](https://github.com/chippolot). Todo o crédito pelo desenvolvimento vai ao autor original.
+
 Um gerenciador de personagens moderno e interativo para o RPG de mesa Mausritter, construído com React e TypeScript.
 
 ## Experimente!
