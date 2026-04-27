@@ -4,48 +4,48 @@
     "machado": "axe.png", 
     "arco": "bow.png",
     "peitoral": "chestpiece.png",
-    "dagger": "dagger.png",
-    "electric-lantern": "electric-lantern.png",
-    "hammer": "hammer.png",
-    "heavy-armour": "heavy-armour.png",
-    "hookarm": "hookarm.png",
+    "adaga": "dagger.png",
+    "lanterna-eletrica": "electric-lantern.png",
+    "martelo": "hammer.png",
+    "armadura-pesada": "heavy-armour.png",
+    "arma-de-gancho": "hookarm.png",
     "improvisado": "improvised.png",
-    "lantern": "lantern.png",
-    "light-armour": "light-armour.png",
-    "mace": "mace.png",
-    "needle": "needle.png",
-    "pickaxe": "pickaxe.png",
-    "pip-purse": "pip-purse.png",
-    "rations": "rations.png",
-    "shield": "shield.png",
-    "sling": "sling.png",
-    "spear": "spear.png",
-    "spell01": "spell01.png",
-    "spell02": "spell02.png",
-    "spell03": "spell03.png",
-    "spell04": "spell04.png",
-    "spell05": "spell05.png",
-    "stones": "stones.png",
-    "sword": "sword.png",
-    "torches": "torches.png",
-    "warhammer": "warhammer.png"
+    "lanterna": "lantern.png",
+    "armadura-leve": "light-armour.png",
+    "maca": "mace.png",
+    "agulha": "needle.png",
+    "picareta": "pickaxe.png",
+    "saco-de-grao": "pip-purse.png",
+    "racao": "rations.png",
+    "escudo": "shield.png",
+    "estilingue": "sling.png",
+    "lanca": "spear.png",
+    "feitico01": "spell01.png",
+    "feitico02": "spell02.png",
+    "feitico03": "spell03.png",
+    "feitico04": "spell04.png",
+    "feitico05": "spell05.png",
+    "pedras": "stones.png",
+    "espada": "sword.png",
+    "tochas": "torches.png",
+    "martelo-de-guerra": "warhammer.png"
   },
   "categories": [
     {
       "name": "Armas",
-      "images": ["dagger", "needle", "machado", "sword", "spear", "hammer", "warhammer", "mace", "pickaxe", "hookarm", "arco", "sling", "improvised"]
+      "images": ["adaga", "agulha", "machado", "espada", "lanca", "martelo", "martelo-de-guerra", "maca", "picareta", "arma-de-gancho", "arco", "estilingue", "improvisado"]
     },
     {
       "name": "Armaduras", 
-      "images": ["peitoral", "light-armour", "heavy-armour", "shield"]
+      "images": ["peitoral", "armadura-leve", "armadura-pesada", "escudo"]
     },
     {
       "name": "Itens",
-      "images": ["lantern", "electric-lantern", "torches", "rations", "pip-purse", "flechas", "stones"]
+      "images": ["lanterna", "lanterna-eletrica", "torchas", "rations", "saco-de-grao", "flechas", "pedras"]
     },
     {
       "name": "Feitiços",
-      "images": ["spell01","spell02","spell03","spell04","spell05"]
+      "images": ["feitico01","feitico02","feitico03","feitico04","feitico05"]
     },
     {
       "name": "Genérico",
