@@ -1,15 +1,15 @@
 {
   "imageMap": {
-    "arrows": "arrows.png",
-    "axe": "axe.png", 
-    "bow": "bow.png",
-    "chestpiece": "chestpiece.png",
+    "flechas": "arrows.png",
+    "machado": "axe.png", 
+    "arco": "bow.png",
+    "peitoral": "chestpiece.png",
     "dagger": "dagger.png",
     "electric-lantern": "electric-lantern.png",
     "hammer": "hammer.png",
     "heavy-armour": "heavy-armour.png",
     "hookarm": "hookarm.png",
-    "improvised": "improvised.png",
+    "improvisado": "improvised.png",
     "lantern": "lantern.png",
     "light-armour": "light-armour.png",
     "mace": "mace.png",
@@ -32,24 +32,24 @@
   },
   "categories": [
     {
-      "name": "Weapons",
-      "images": ["dagger", "needle", "axe", "sword", "spear", "hammer", "warhammer", "mace", "pickaxe", "hookarm", "bow", "sling", "improvised"]
+      "name": "Armas",
+      "images": ["dagger", "needle", "machado", "sword", "spear", "hammer", "warhammer", "mace", "pickaxe", "hookarm", "arco", "sling", "improvised"]
     },
     {
-      "name": "Armor", 
-      "images": ["chestpiece", "light-armour", "heavy-armour", "shield"]
+      "name": "Armaduras", 
+      "images": ["peitoral", "light-armour", "heavy-armour", "shield"]
     },
     {
-      "name": "Items",
-      "images": ["lantern", "electric-lantern", "torches", "rations", "pip-purse", "arrows", "stones"]
+      "name": "Itens",
+      "images": ["lantern", "electric-lantern", "torches", "rations", "pip-purse", "flechas", "stones"]
     },
     {
-      "name": "Spells",
+      "name": "Feitiços",
       "images": ["spell01","spell02","spell03","spell04","spell05"]
     },
     {
-      "name": "Generic",
-      "images": ["improvised"]
+      "name": "Genérico",
+      "images": ["improvisado"]
     }
   ]
 }

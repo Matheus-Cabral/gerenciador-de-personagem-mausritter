@@ -359,36 +359,36 @@ export const CharacterGenerationWizard: React.FC<CharacterGenerationWizardProps>
       case 0:
         return (
           <div className="text-center">
-            <h3 className="text-xl font-bold mb-4">Welcome to Mouse Generation!</h3>
-            <p className="mb-6">Let's create your brave mouse adventurer following the official Mausritter rules.</p>
-            <p className="mb-6">First, we'll roll your attributes (STR, DEX, WIL) using 3d6, keeping the two highest dice for each.</p>
+            <h3 className="text-xl font-bold mb-4">Bem-Vindo(a) a Fábrica de Rato!</h3>
+            <p className="mb-6">Vamos criar o seu bravo rato avetureiro seguindo as regras oficiais de Mausritter.</p>
+            <p className="mb-6">Primeiro, vamos rolar seus atributos (FOR, DES, VON) usando 3d6 por atributo, mantendo os dois dados maiores para cada atributo.</p>
           </div>
         );
         
       case 1:
         return (
           <div>
-            <h3 className="text-xl font-bold mb-4">Attributes Rolled!</h3>
+            <h3 className="text-xl font-bold mb-4">Atributos Rolados!</h3>
             <div className="grid grid-cols-3 gap-4 mb-6">
               <div className="text-center">
-                <div className="font-semibold">STR</div>
-                <div className="text-sm mb-2">Rolled: {results.attributes.str.join(', ')}</div>
+                <div className="font-semibold">FOR</div>
+                <div className="text-sm mb-2">Rolado: {results.attributes.str.join(', ')}</div>
                 <div className="text-2xl font-bold">{results.attributes.final.str}</div>
               </div>
               <div className="text-center">
-                <div className="font-semibold">DEX</div>
-                <div className="text-sm mb-2">Rolled: {results.attributes.dex.join(', ')}</div>
+                <div className="font-semibold">DES</div>
+                <div className="text-sm mb-2">Rolado: {results.attributes.dex.join(', ')}</div>
                 <div className="text-2xl font-bold">{results.attributes.final.dex}</div>
               </div>
               <div className="text-center">
-                <div className="font-semibold">WIL</div>
-                <div className="text-sm mb-2">Rolled: {results.attributes.wil.join(', ')}</div>
+                <div className="font-semibold">VON</div>
+                <div className="text-sm mb-2">Rolado: {results.attributes.wil.join(', ')}</div>
                 <div className="text-2xl font-bold">{results.attributes.final.wil}</div>
               </div>
             </div>
             <div className="mb-6">
-              <h4 className="font-semibold mb-3">Optional: Swap Two Stats</h4>
-              <p className="text-sm text-theme-text-light mb-3">You may swap any two attribute values if you wish. Click again to undo.</p>
+              <h4 className="font-semibold mb-3">Opcional: Troque dois atributos</h4>
+              <p className="text-sm text-theme-text-light mb-3">Você pode Trocar os valores de quaisquer dois atributos que queira. Clique novamente para desfazer.</p>
               <div className="grid grid-cols-3 gap-2">
                 <button
                   onClick={() => swapStats('str', 'dex')}
@@ -398,7 +398,7 @@ export const CharacterGenerationWizard: React.FC<CharacterGenerationWizardProps>
                       : 'border-theme-primary-800 text-theme-primary-800 hover:bg-theme-primary-200'
                   }`}
                 >
-                  Swap STR ↔ DEX
+                  Troque FOR ↔ DES
                 </button>
                 <button
                   onClick={() => swapStats('str', 'wil')}
@@ -408,7 +408,7 @@ export const CharacterGenerationWizard: React.FC<CharacterGenerationWizardProps>
                       : 'border-theme-primary-800 text-theme-primary-800 hover:bg-theme-primary-200'
                   }`}
                 >
-                  Swap STR ↔ WIL
+                  Troque FOR ↔ VON
                 </button>
                 <button
                   onClick={() => swapStats('dex', 'wil')}
@@ -418,34 +418,34 @@ export const CharacterGenerationWizard: React.FC<CharacterGenerationWizardProps>
                       : 'border-theme-primary-800 text-theme-primary-800 hover:bg-theme-primary-200'
                   }`}
                 >
-                  Swap DEX ↔ WIL
+                  Troque DES ↔ VON
                 </button>
               </div>
               {results.selectedSwap && (
                 <p className="text-sm text-theme-primary-600 mt-2">
-                  Current swap: <strong>{results.selectedSwap.replace('-', ' ↔ ').toUpperCase()}</strong>
+                  Troca atual: <strong>{results.selectedSwap.replace('-', ' ↔ ').toUpperCase()}</strong>
                 </p>
               )}
             </div>
-            <p>Now let's roll for Hit Points (1d6)...</p>
+            <p>Agora Vamos rolar para os Pontos de Vida (1d6)...</p>
           </div>
         );
         
       case 2:
         return (
           <div className="text-center">
-            <h3 className="text-xl font-bold mb-4">Hit Points</h3>
-            <div className="text-4xl font-bold mb-4">{results.hitPoints} HP</div>
-            <p>Now let's roll for starting Pips (currency)...</p>
+            <h3 className="text-xl font-bold mb-4">Pontos de Vida</h3>
+            <div className="text-4xl font-bold mb-4">{results.hitPoints} PV</div>
+            <p>Agora Vamos rolar para os Grãos (dinheiro)...</p>
           </div>
         );
         
       case 3:
         return (
           <div className="text-center">
-            <h3 className="text-xl font-bold mb-4">Starting Pips</h3>
-            <div className="text-4xl font-bold mb-4">{results.pips} Pips</div>
-            <p>Now we'll determine your background based on your HP and Pips...</p>
+            <h3 className="text-xl font-bold mb-4">Grãos Iniciais</h3>
+            <div className="text-4xl font-bold mb-4">{results.pips} Grãos</div>
+            <p>Agora vamos determinar seu background baseado no seu PV e Grãos...</p>
           </div>
         );
         
@@ -455,48 +455,48 @@ export const CharacterGenerationWizard: React.FC<CharacterGenerationWizardProps>
             <h3 className="text-xl font-bold mb-4">Background</h3>
             <div className="text-2xl font-bold mb-2">{results.background.name}</div>
             <div className="mb-4">
-              <div className="font-semibold">Starting Items:</div>
+              <div className="font-semibold">Itens Iniciais:</div>
               <div>{results.background.items.map(item => 
                 typeof item === 'object' ? item.name : item
               ).join(', ')}</div>
             </div>
-            <p>Now let's roll for your birthsign...</p>
+            <p>Agora vamos rolar seu Signo...</p>
           </div>
         );
         
       case 5:
         return (
           <div className="text-center">
-            <h3 className="text-xl font-bold mb-4">Birthsign</h3>
+            <h3 className="text-xl font-bold mb-4">Signo</h3>
             <div className="text-2xl font-bold mb-2">{results.birthsign.name}</div>
             <div className="text-sm mb-4">{results.birthsign.description}</div>
-            <p>Now let's roll for your coat...</p>
+            <p>Agora vamos rolar sua Pelagem...</p>
           </div>
         );
         
       case 6:
         return (
           <div className="text-center">
-            <h3 className="text-xl font-bold mb-4">Coat</h3>
+            <h3 className="text-xl font-bold mb-4">Pelagem</h3>
             <div className="text-2xl font-bold mb-4">{results.coat.pattern} {results.coat.color}</div>
-            <p>Now let's roll for a distinguishing physical detail...</p>
+            <p>Agora vamos rolar seu Visual...</p>
           </div>
         );
         
       case 7:
         return (
           <div className="text-center">
-            <h3 className="text-xl font-bold mb-4">Physical Detail</h3>
+            <h3 className="text-xl font-bold mb-4">Visual</h3>
             <div className="text-xl mb-4">{results.physicalDetail}</div>
-            <p>Now let's choose your starting weapon...</p>
+            <p>Agora vamos escolher sua arma inicial...</p>
           </div>
         );
         
       case 8:
         return (
           <div>
-            <h3 className="text-xl font-bold mb-4">Choose Your Weapon</h3>
-            <p className="mb-4">Select a starting weapon for your mouse:</p>
+            <h3 className="text-xl font-bold mb-4">Escolha Sua Arma</h3>
+            <p className="mb-4">Selecione a arma inicial do seu rato:</p>
             <div className="grid grid-cols-2 gap-3 mb-4">
               {mausritterItems.weapons.map((weapon) => (
                 <button
@@ -510,14 +510,14 @@ export const CharacterGenerationWizard: React.FC<CharacterGenerationWizardProps>
                 >
                   <div className="font-semibold">{weapon.name}</div>
                   <div className="text-xs text-theme-text-light">
-                    {weapon.damage} damage • {weapon.weaponCategory}
+                    {weapon.damage} dano • {weapon.weaponCategory}
                   </div>
                 </button>
               ))}
             </div>
             {results.selectedWeapon && (
               <p className="text-sm text-theme-text-light">
-                Selected: <strong>{results.selectedWeapon}</strong>
+                Selecionado: <strong>{results.selectedWeapon}</strong>
               </p>
             )}
           </div>
@@ -526,14 +526,14 @@ export const CharacterGenerationWizard: React.FC<CharacterGenerationWizardProps>
       case 9:
         return (
           <div>
-            <h3 className="text-xl font-bold mb-4">Name Your Mouse</h3>
-            <p className="mb-4">We've suggested a name, but you can change it:</p>
+            <h3 className="text-xl font-bold mb-4">Nomeie seu Rato</h3>
+            <p className="mb-4">Nós sugerimos um nome, mas você pode mudar:</p>
             <input
               type="text"
               value={results.name}
               onChange={(e) => setResults({ ...results, name: e.target.value })}
               className="w-full p-3 border border-theme-primary-800 rounded mb-4"
-              placeholder="Enter mouse name..."
+              placeholder="Insira o nome do rato..."
             />
           </div>
         );
@@ -541,12 +541,12 @@ export const CharacterGenerationWizard: React.FC<CharacterGenerationWizardProps>
       case 10:
         return (
           <div>
-            <h3 className="text-xl font-bold mb-4">Final Customization</h3>
-            <p className="mb-4">You can customize these rolled characteristics or keep them as is:</p>
+            <h3 className="text-xl font-bold mb-4">Customização Final</h3>
+            <p className="mb-4">Você pode modificar as caracteristicas roladas ou manter elas como estão:</p>
             
             <div className="space-y-4">
               <div>
-                <label className="block font-semibold mb-2">Birthsign:</label>
+                <label className="block font-semibold mb-2">Signo:</label>
                 <select
                   value={results.customBirthsign || results.birthsign.name}
                   onChange={(e) => setResults({ ...results, customBirthsign: e.target.value })}
@@ -562,7 +562,7 @@ export const CharacterGenerationWizard: React.FC<CharacterGenerationWizardProps>
               
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block font-semibold mb-2">Coat Color:</label>
+                  <label className="block font-semibold mb-2">Pelagem:</label>
                   <select
                     value={results.customCoat.color || results.coat.color}
                     onChange={(e) => setResults({ 
@@ -583,7 +583,7 @@ export const CharacterGenerationWizard: React.FC<CharacterGenerationWizardProps>
                 </div>
                 
                 <div>
-                  <label className="block font-semibold mb-2">Coat Pattern:</label>
+                  <label className="block font-semibold mb-2">Padrão da Pelagem:</label>
                   <select
                     value={results.customCoat.pattern || results.coat.pattern}
                     onChange={(e) => setResults({ 
@@ -605,7 +605,7 @@ export const CharacterGenerationWizard: React.FC<CharacterGenerationWizardProps>
               </div>
               
               <div>
-                <label className="block font-semibold mb-2">Physical Detail:</label>
+                <label className="block font-semibold mb-2">Visual:</label>
                 <select
                   value={results.customPhysicalDetail || results.physicalDetail}
                   onChange={(e) => setResults({ ...results, customPhysicalDetail: e.target.value })}
@@ -625,27 +625,27 @@ export const CharacterGenerationWizard: React.FC<CharacterGenerationWizardProps>
       case 11:
         return (
           <div>
-            <h3 className="text-xl font-bold mb-4">Your Mouse is Complete!</h3>
+            <h3 className="text-xl font-bold mb-4">Seu Rato Está Pronto!</h3>
             <div className="bg-theme-primary-100 p-4 rounded-lg mb-4">
               <div className="text-2xl font-bold mb-2">{results.name}</div>
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div>
-                  <div><strong>STR:</strong> {results.attributes.final.str}</div>
-                  <div><strong>DEX:</strong> {results.attributes.final.dex}</div>
-                  <div><strong>WIL:</strong> {results.attributes.final.wil}</div>
+                  <div><strong>FOR:</strong> {results.attributes.final.str}</div>
+                  <div><strong>DES:</strong> {results.attributes.final.dex}</div>
+                  <div><strong>VON:</strong> {results.attributes.final.wil}</div>
                 </div>
                 <div>
-                  <div><strong>HP:</strong> {results.hitPoints}</div>
-                  <div><strong>Pips:</strong> {results.pips}</div>
+                  <div><strong>PV:</strong> {results.hitPoints}</div>
+                  <div><strong>Grãos:</strong> {results.pips}</div>
                   <div><strong>Background:</strong> {results.background.name}</div>
                 </div>
               </div>
               <div className="mt-2">
-                <div><strong>Birthsign:</strong> {results.customBirthsign || results.birthsign.name}</div>
-                <div><strong>Coat:</strong> {results.customCoat.pattern || results.coat.pattern} {results.customCoat.color || results.coat.color}</div>
-                <div><strong>Look:</strong> {results.customPhysicalDetail || results.physicalDetail}</div>
-                <div><strong>Weapon:</strong> {results.selectedWeapon}</div>
-                <div><strong>Items:</strong> Torch, Rations, {results.background.items.map(item => 
+                <div><strong>Signo:</strong> {results.customBirthsign || results.birthsign.name}</div>
+                <div><strong>Pelagem:</strong> {results.customCoat.pattern || results.coat.pattern} {results.customCoat.color || results.coat.color}</div>
+                <div><strong>Visual:</strong> {results.customPhysicalDetail || results.physicalDetail}</div>
+                <div><strong>Arma:</strong> {results.selectedWeapon}</div>
+                <div><strong>Itens:</strong> Torch, Rations, {results.background.items.map(item =>
                   typeof item === 'object' ? item.name : item
                 ).join(', ')}</div>
               </div>
@@ -661,7 +661,7 @@ export const CharacterGenerationWizard: React.FC<CharacterGenerationWizardProps>
         <div className="p-6">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-2xl font-medium text-theme-primary-800">
-              Mouse Generator
+              Gerador de Rato
             </h2>
             <button
               onClick={handleClose}
@@ -679,7 +679,7 @@ export const CharacterGenerationWizard: React.FC<CharacterGenerationWizardProps>
               />
             </div>
             <div className="text-sm text-theme-text-light mt-1">
-              Step {results.step + 1} of 12
+              Passo {results.step + 1} de 12
             </div>
           </div>
 
@@ -700,21 +700,21 @@ export const CharacterGenerationWizard: React.FC<CharacterGenerationWizardProps>
                 }`}
                 disabled={results.step === 8 && !results.selectedWeapon}
               >
-                {results.step === 0 ? 'Start Generation' : 'Next Step'}
+                {results.step === 0 ? 'Começar a Gerar' : 'Próximo Passo'}
               </button>
             ) : (
               <button
                 onClick={createCharacterFromResults}
                 className="button-primary flex-1"
               >
-                Create Character
+                Criar Personagem
               </button>
             )}
             <button
               onClick={handleClose}
               className="px-4 py-2 border border-theme-primary-800 text-theme-primary-800 rounded hover:bg-theme-primary-200 transition-colors"
             >
-              Cancel
+              Cancelar
             </button>
           </div>
         </div>

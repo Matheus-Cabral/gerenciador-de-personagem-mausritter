@@ -63,31 +63,31 @@ export const CharacterSelector: React.FC = () => {
         <div className="max-w-md mx-auto mt-20 text-center px-4">
           <div className="card">
             <h1 className="text-2xl sm:text-3xl text-theme-primary-800 text-theme-primary-800 mb-6">
-              Mausritter Character Manager
+              Gerenciador de Personagem - Mausritter
             </h1>
             <p className="text-theme-primary-800 mb-6">
-              Welcome! You don't have any characters yet.
+              Bem-Vindo(a)! Você não tem personagens ainda...
             </p>
             <div className="space-y-4">
               <button
                 onClick={() => setShowWizard(true)}
                 className="button-primary text-base sm:text-lg px-4 sm:px-6 py-3 w-full min-h-[44px] touch-manipulation"
               >
-                🎲 Generate Random Character
+                🎲 Gerar Personagem aleatório
               </button>
-              <div className="text-sm text-theme-text-light">or</div>
+              <div className="text-sm text-theme-text-light">ou</div>
               <button
                 onClick={handleCreateCharacter}
                 className="px-4 sm:px-6 py-3 border border-theme-primary-800 text-theme-primary-800 rounded hover:bg-theme-primary-100 transition-colors text-base sm:text-lg w-full min-h-[44px] touch-manipulation"
               >
-                Create Blank Character
+                Criar Personagem em Branco
               </button>
-              <div className="text-sm text-theme-text-light">or</div>
+              <div className="text-sm text-theme-text-light">ou</div>
               <button
                 onClick={() => importFileInputRef.current?.click()}
                 className="px-4 sm:px-6 py-3 border border-theme-primary-800 text-theme-primary-800 rounded hover:bg-theme-primary-100 transition-colors text-base sm:text-lg w-full min-h-[44px] touch-manipulation"
               >
-                📄 Import from JSON
+                📄 Importar de JSON
               </button>
             </div>
           </div>
@@ -114,27 +114,27 @@ export const CharacterSelector: React.FC = () => {
       <div className="card mb-6">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-4">
           <h1 className="text-2xl sm:text-3xl text-theme-primary-800 text-theme-primary-800">
-            Your Characters
+            Seus Personagens
           </h1>
           <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
             <button
               onClick={() => setShowWizard(true)}
               className="button-primary min-h-[44px] touch-manipulation text-sm sm:text-base"
             >
-              🎲 Generate
+              🎲 Gerar
             </button>
             <button
               onClick={handleCreateCharacter}
               className="px-3 sm:px-4 py-2 border border-theme-primary-800 text-theme-primary-800 rounded hover:bg-theme-primary-100 transition-colors min-h-[44px] touch-manipulation text-sm sm:text-base"
             >
-              Blank Character
+              Personagem em branco
             </button>
             <button
               onClick={() => importFileInputRef.current?.click()}
               className="px-3 sm:px-4 py-2 border border-theme-primary-800 text-theme-primary-800 rounded hover:bg-theme-primary-100 transition-colors min-h-[44px] touch-manipulation text-sm sm:text-base"
-              title="Import character from JSON file"
+              title="Importar personagem de arquivo JSON"
             >
-              📄 Import
+              📄 Importar
             </button>
           </div>
         </div>
@@ -155,7 +155,7 @@ export const CharacterSelector: React.FC = () => {
                   <h3 className={`text-2xl font-medium text-theme-primary-800 ${
                     !character.alive ? 'line-through opacity-60' : ''
                   }`}>
-                    {character.name || 'Unnamed Character'}
+                    {character.name || 'Personagem sem Nome'}
                   </h3>
                   {!character.alive && <span className="text-lg">💀</span>}
                 </div>
@@ -167,14 +167,14 @@ export const CharacterSelector: React.FC = () => {
                   className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 
                              text-theme-primary-600 hover:text-theme-error-600 w-6 h-6 
                              flex items-center justify-center pointer-events-auto"
-                  title="Delete character"
+                  title="Deletar personagem"
                 >
                   <RiDeleteBin6Line size={16} />
                 </button>
               </div>
               
               <div className="text-sm text-theme-primary-800 opacity-75 mb-2">
-                Level {character.level} • {character.experience} XP
+                Nível {character.level} • {character.experience} XP
               </div>
               
               <div className="text-xs text-theme-primary-800">
@@ -182,10 +182,10 @@ export const CharacterSelector: React.FC = () => {
                   <div>Background: {character.background}</div>
                 )}
                 <div>
-                  STR {character.strength} • DEX {character.dexterity} • WIL {character.will}
+                  FOR {character.strength} • DES {character.dexterity} • VON {character.will}
                 </div>
                 <div>
-                  HP {character.hitPoints}/{character.maxHitPoints}
+                  PV {character.hitPoints}/{character.maxHitPoints}
                 </div>
               </div>
             </div>
@@ -197,23 +197,23 @@ export const CharacterSelector: React.FC = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-4">
             <h3 className="text-lg font-bold text-theme-primary-800 mb-4">
-              Delete Character
+              Deletar Personagem
             </h3>
             <p className="text-theme-primary-800 mb-6">
-              Are you sure you want to delete this character? This action cannot be undone.
+              Você tem certeza que quer deletar este personagem? Esta ação não pode ser desfeita.
             </p>
             <div className="flex space-x-2">
               <button
                 onClick={() => handleDeleteCharacter(showDeleteConfirm)}
                 className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors"
               >
-                Delete
+                Deletar
               </button>
               <button
                 onClick={() => setShowDeleteConfirm(null)}
                 className="px-4 py-2 border border-theme-primary-800 text-theme-primary-800 rounded hover:bg-theme-primary-200 transition-colors"
               >
-                Cancel
+                Cancelar
               </button>
             </div>
           </div>

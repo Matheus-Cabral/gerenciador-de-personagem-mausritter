@@ -77,11 +77,11 @@ export const CustomItemDialog: React.FC<CustomItemDialogProps> = ({
 
   const getCategoryLabel = () => {
     const labels = {
-      weapon: 'Weapon',
-      armor: 'Armor',
+      weapon: 'Arma',
+      armor: 'Armadura',
       item: 'Item',
-      spell: 'Spell',
-      condition: 'Condition'
+      spell: 'Faitiço',
+      condition: 'Condição'
     };
     return labels[category];
   };
@@ -92,7 +92,7 @@ export const CustomItemDialog: React.FC<CustomItemDialogProps> = ({
         <div className="p-6">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-2xl font-medium text-stone-800">
-              Create Custom {getCategoryLabel()}
+              Criar {getCategoryLabel()} Customizado(a)
             </h2>
             <button
               onClick={onClose}
@@ -106,14 +106,14 @@ export const CustomItemDialog: React.FC<CustomItemDialogProps> = ({
             {/* Name - Required for all */}
             <div>
               <label className="block text-sm font-medium text-stone-700 mb-1">
-                Name *
+                Nome *
               </label>
               <input
                 type="text"
                 value={formData.name}
                 onChange={(e) => handleInputChange('name', e.target.value)}
                 className="w-full border border-stone-300 rounded px-3 py-2 text-sm"
-                placeholder={`Enter ${category} name`}
+                placeholder={`Insira o nome do(a) ${getCategoryLabel()}`}
                 required
               />
             </div>
@@ -121,24 +121,24 @@ export const CustomItemDialog: React.FC<CustomItemDialogProps> = ({
             {/* Size - For all items */}
             <div>
               <label className="block text-sm font-medium text-stone-700 mb-1">
-                Size
+                Tamanho
               </label>
               <select
                 value={formData.size}
                 onChange={(e) => handleInputChange('size', e.target.value)}
                 className="w-full border border-stone-300 rounded px-3 py-2 text-sm"
               >
-                <option value="small">Small (1×1)</option>
-                <option value="wide">Wide (2×1)</option>
-                <option value="tall">Tall (1×2)</option>
-                <option value="large">Large (2×2)</option>
+                <option value="small">Pequeno (1×1)</option>
+                <option value="wide">Largo (2×1)</option>
+                <option value="tall">Alto (1×2)</option>
+                <option value="large">Grande (2×2)</option>
               </select>
             </div>
 
             {/* Image Selector */}
             <div>
               <label className="block text-sm font-medium text-stone-700 mb-1">
-                Item Image
+                Imagem do Item
               </label>
               <div className="space-y-2">
                 <select
@@ -146,7 +146,7 @@ export const CustomItemDialog: React.FC<CustomItemDialogProps> = ({
                   onChange={(e) => handleInputChange('imageKey', e.target.value)}
                   className="w-full border border-stone-300 rounded px-3 py-2 text-sm"
                 >
-                  <option value="">No image</option>
+                  <option value="">Sem imagem</option>
                   {getImageOptionsByCategory().map(categoryGroup => (
                     <optgroup key={categoryGroup.name} label={categoryGroup.name}>
                       {categoryGroup.options.map(option => (
@@ -174,33 +174,33 @@ export const CustomItemDialog: React.FC<CustomItemDialogProps> = ({
               <>
                 <div>
                   <label className="block text-sm font-medium text-stone-700 mb-1">
-                    Damage
+                    Dano
                   </label>
                   <input
                     type="text"
                     value={formData.damage}
                     onChange={(e) => handleInputChange('damage', e.target.value)}
                     className="w-full border border-stone-300 rounded px-3 py-2 text-sm"
-                    placeholder="e.g., d6, d8, d6/d8"
+                    placeholder="ex., d6, d8, d6/d8"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-stone-700 mb-1">
-                    Category
+                    Categoria
                   </label>
                   <select
                     value={formData.weaponCategory}
                     onChange={(e) => handleInputChange('weaponCategory', e.target.value)}
                     className="w-full border border-stone-300 rounded px-3 py-2 text-sm"
                   >
-                    <option value="light">Light</option>
-                    <option value="medium">Medium</option>
-                    <option value="heavy">Heavy</option>
-                    <option value="light ranged">Light Ranged</option>
-                    <option value="medium ranged">Medium Ranged</option>
-                    <option value="heavy ranged">Heavy Ranged</option>
-                    <option value="ammunition">Ammunition</option>
-                    <option value="improvised">Improvised</option>
+                    <option value="light">Leve</option>
+                    <option value="medium">Médio</option>
+                    <option value="heavy">Pesado</option>
+                    <option value="light ranged">Curto Alcance</option>
+                    <option value="medium ranged">Médio Alcance</option>
+                    <option value="heavy ranged">Longo Alcance</option>
+                    <option value="ammunition">Munição</option>
+                    <option value="improvised">Improvisado</option>
                   </select>
                 </div>
               </>
@@ -210,7 +210,7 @@ export const CustomItemDialog: React.FC<CustomItemDialogProps> = ({
             {category === 'armor' && (
               <div>
                 <label className="block text-sm font-medium text-stone-700 mb-1">
-                  Defense
+                  Defesa
                 </label>
                 <input
                   type="number"
@@ -228,24 +228,24 @@ export const CustomItemDialog: React.FC<CustomItemDialogProps> = ({
               <>
                 <div>
                   <label className="block text-sm font-medium text-stone-700 mb-1">
-                    Description
+                    Descrição
                   </label>
                   <textarea
                     value={formData.description}
                     onChange={(e) => handleInputChange('description', e.target.value)}
                     className="w-full border border-stone-300 rounded px-3 py-2 text-sm h-20"
-                    placeholder="Describe the condition's effects"
+                    placeholder="Descreva o efeito da Condição"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-stone-700 mb-1">
-                    Clear Instructions
+                    Instruções claras
                   </label>
                   <textarea
                     value={formData.clearInstructions}
                     onChange={(e) => handleInputChange('clearInstructions', e.target.value)}
                     className="w-full border border-stone-300 rounded px-3 py-2 text-sm h-20"
-                    placeholder="How to clear this condition"
+                    placeholder="Como remover esta condição"
                   />
                 </div>
               </>
@@ -256,7 +256,7 @@ export const CustomItemDialog: React.FC<CustomItemDialogProps> = ({
               <>
                 <div>
                   <label className="block text-sm font-medium text-stone-700 mb-1">
-                    Maximum Usage Dots
+                    Pontos de Uso Máximo
                   </label>
                   <input
                     type="number"
@@ -276,13 +276,13 @@ export const CustomItemDialog: React.FC<CustomItemDialogProps> = ({
                 onClick={onClose}
                 className="flex-1 px-4 py-2 border border-stone-300 rounded text-sm text-stone-700 hover:bg-stone-50"
               >
-                Cancel
+                Cancelar
               </button>
               <button
                 type="submit"
                 className="flex-1 button-primary text-sm"
               >
-                Create {getCategoryLabel()}
+                Criar {getCategoryLabel()}
               </button>
             </div>
           </form>

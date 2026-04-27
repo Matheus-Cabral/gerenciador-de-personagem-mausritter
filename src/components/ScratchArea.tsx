@@ -36,9 +36,9 @@ export const ScratchArea: React.FC<ScratchAreaProps> = ({ onMobileScratchClick }
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="text-theme-primary-600 text-center">
             <div className={`font-semibold ${isMobile ? 'text-base' : 'text-lg'}`}>
-              {isMobile ? 'Tap to move selected item here' : 'Drop items here to organize'}
+              {isMobile ? 'Tap to move selected item here' : 'Solte itens aqui para organizar'}
             </div>
-            <div className="text-sm mt-2">Items placed here don't snap to any grid</div>
+            <div className="text-sm mt-2">Itens colocados aqui não vão encaixar em nenhuma grade</div>
           </div>
         </div>
       </div>

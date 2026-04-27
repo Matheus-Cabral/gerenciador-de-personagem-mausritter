@@ -43,12 +43,12 @@ export const CharacterDetails: React.FC<CharacterDetailsProps> = ({
 
   return (
     <div className="card">
-      <h2 className="text-2xl font-medium text-theme-primary-800 mb-4">Character Details</h2>
+      <h2 className="text-2xl font-medium text-theme-primary-800 mb-4">Detalhes do Personagem</h2>
       
       <div className="space-y-4">
         <div>
           <label className="block text-sm font-semibold text-theme-primary-800 mb-1">
-            Name
+            Nome
           </label>
           <input
             type="text"
@@ -57,7 +57,7 @@ export const CharacterDetails: React.FC<CharacterDetailsProps> = ({
             className={`input-field w-full ${
               !character.alive ? 'line-through opacity-60' : ''
             }`}
-            placeholder="Enter character name"
+            placeholder="Insira o nome do personagem"
           />
         </div>
 
@@ -75,7 +75,7 @@ export const CharacterDetails: React.FC<CharacterDetailsProps> = ({
             <span className={`text-xs ${
               character.alive ? 'text-theme-primary-800' : 'text-theme-primary-500'
             }`}>
-              {character.alive ? 'Alive' : 'Dead'}
+              {character.alive ? 'Vivo' : 'Morto'}
             </span>
           </label>
         </div>
@@ -83,7 +83,7 @@ export const CharacterDetails: React.FC<CharacterDetailsProps> = ({
         <div className="grid grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-semibold text-theme-primary-800 mb-1">
-              Level
+              Nível
             </label>
             <input
               type="number"
@@ -107,7 +107,7 @@ export const CharacterDetails: React.FC<CharacterDetailsProps> = ({
           </div>
         </div>
         <div className="text-xs text-theme-primary-600 -mt-2">
-          Recovered treasure → XP
+          Tesouro Recuperado → XP
         </div>
 
         {/* Attributes */}
@@ -115,7 +115,7 @@ export const CharacterDetails: React.FC<CharacterDetailsProps> = ({
           {/* STR */}
           <div className="flex items-center justify-between">
             <label className="text-lg font-semibold text-theme-primary-800">
-              STR
+              FOR
             </label>
             <div className="flex items-center space-x-1">
               <input
@@ -140,7 +140,7 @@ export const CharacterDetails: React.FC<CharacterDetailsProps> = ({
           {/* DEX */}
           <div className="flex items-center justify-between">
             <label className="text-lg font-semibold text-theme-primary-800">
-              DEX
+              DES
             </label>
             <div className="flex items-center space-x-1">
               <input
@@ -165,7 +165,7 @@ export const CharacterDetails: React.FC<CharacterDetailsProps> = ({
           {/* WIL */}
           <div className="flex items-center justify-between">
             <label className="text-lg font-semibold text-theme-primary-800">
-              WIL
+              VON
             </label>
             <div className="flex items-center space-x-1">
               <input
@@ -191,7 +191,7 @@ export const CharacterDetails: React.FC<CharacterDetailsProps> = ({
         {/* Hit Points - spaced apart */}
         <div className="flex items-center justify-between">
           <label className="text-lg font-semibold text-theme-primary-800">
-            HP
+            PV
           </label>
           <div className="flex items-center space-x-1">
             <input
@@ -216,7 +216,7 @@ export const CharacterDetails: React.FC<CharacterDetailsProps> = ({
         {/* Pips */}
         <div className="flex items-center justify-between">
           <label className="text-lg font-semibold text-theme-primary-800">
-            Pips
+            Grãos
           </label>
           <div className="flex items-center space-x-1">
             <input
@@ -234,58 +234,58 @@ export const CharacterDetails: React.FC<CharacterDetailsProps> = ({
 
         <div>
           <label className="block text-sm font-semibold text-theme-primary-800 mb-1">
-            Background
+            Antecedente
           </label>
           <input
             type="text"
             value={character.background}
             onChange={handleInputChange('background')}
             className="input-field w-full"
-            placeholder="e.g., Kitchen Forager"
+            placeholder="ex. Forrageador de Cozinha"
           />
         </div>
 
         <div>
           <label className="block text-sm font-semibold text-theme-primary-800 mb-1">
-            Birthsign
+            Signo
           </label>
           <input
             type="text"
             value={character.birthsign}
             onChange={handleInputChange('birthsign')}
             className="input-field w-full"
-            placeholder="e.g., The Star"
+            placeholder="ex. Estrela"
           />
         </div>
 
         <div>
           <label className="block text-sm font-semibold text-theme-primary-800 mb-1">
-            Coat
+            Pelagem
           </label>
           <input
             type="text"
             value={character.coat}
             onChange={handleInputChange('coat')}
             className="input-field w-full"
-            placeholder="Describe your coat"
+            placeholder="Descreva sua Pelagem"
           />
         </div>
 
         <div>
           <label className="block text-sm font-semibold text-theme-primary-800 mb-1">
-            Look
+            Visual
           </label>
           <textarea
             value={character.look}
             onChange={handleInputChange('look')}
             className="input-field w-full h-20 resize-none"
-            placeholder="Describe your character's appearance"
+            placeholder="Descreva o Visual do seu personagem"
           />
         </div>
 
         <div>
           <label className="block text-sm font-semibold text-theme-primary-800 mb-1">
-            Grit
+            Bravura
           </label>
           <input
             type="number"
@@ -298,28 +298,28 @@ export const CharacterDetails: React.FC<CharacterDetailsProps> = ({
 
         <div>
           <label className="block text-sm font-semibold text-theme-primary-800 mb-1">
-            Ignored Conditions
+            Condições Ignoradas
           </label>
           <textarea
             value={character.ignoredConditions}
             onChange={handleInputChange('ignoredConditions')}
             className="input-field w-full h-24 resize-none"
-            placeholder="List conditions you are ignoring due to Grit"
+            placeholder="Liste as condições ignoradas graças a sua Bravura"
           />
           <div className="text-xs text-theme-primary-600 mt-1">
-            Ignore a number of conditions equal to your Grit
+            Ignore um número de condições igual a sua Bravura
           </div>
         </div>
 
         <div>
           <label className="block text-sm font-semibold text-theme-primary-800 mb-1">
-            Banked Items and Pips
+            Itens e Grão estocados
           </label>
           <textarea
             value={character.bankedItemsAndPips}
             onChange={handleInputChange('bankedItemsAndPips')}
             className="input-field w-full h-24 resize-none"
-            placeholder="List items and pips you have banked for safekeeping"
+            placeholder="Liste os Itens e Grãos qu você guardou em um local seguro"
           />
         </div>
 

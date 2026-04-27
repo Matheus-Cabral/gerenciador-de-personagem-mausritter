@@ -111,21 +111,21 @@ export const CharacterSheet: React.FC<CharacterSheetProps> = ({ character }) => 
               className="px-3 py-2 text-sm border border-theme-primary-600 text-theme-primary-600 rounded hover:bg-theme-primary-100 transition-colors min-h-[44px] touch-manipulation"
               title="Export character to JSON file"
             >
-              Export
+              Exportar
             </button>
             <button
               onClick={() => importFileInputRef.current?.click()}
               className="px-3 py-2 text-sm border border-theme-primary-600 text-theme-primary-600 rounded hover:bg-theme-primary-100 transition-colors min-h-[44px] touch-manipulation"
               title="Import character from JSON file"
             >
-              Import
+              Importar
             </button>
           </div>
           <div className="flex items-center justify-center gap-2">
             <h1 className={`text-3xl text-theme-primary-800 mb-2 font-header text-center ${
               !character.alive ? 'line-through opacity-60' : ''
             }`}>
-              {character.name || 'Unnamed Character'}
+              {character.name || 'Personagem sem Nome'}
             </h1>
             {!character.alive && <span className="text-2xl mb-2">💀</span>}
           </div>
@@ -138,7 +138,7 @@ export const CharacterSheet: React.FC<CharacterSheetProps> = ({ character }) => 
             <h1 className={`text-5xl text-theme-primary-800 mb-2 font-header text-center ${
               !character.alive ? 'line-through opacity-60' : ''
             }`}>
-              {character.name || 'Unnamed Character'}
+              {character.name || 'Personagem sem Nome'}
             </h1>
             {!character.alive && <span className="text-4xl mb-2">💀</span>}
           </div>
@@ -148,14 +148,14 @@ export const CharacterSheet: React.FC<CharacterSheetProps> = ({ character }) => 
               className="px-3 py-2 text-sm border border-theme-primary-600 text-theme-primary-600 rounded hover:bg-theme-primary-100 transition-colors min-h-[44px] touch-manipulation"
               title="Export character to JSON file"
             >
-              Export
+              Exportar
             </button>
             <button
               onClick={() => importFileInputRef.current?.click()}
               className="px-3 py-2 text-sm border border-theme-primary-600 text-theme-primary-600 rounded hover:bg-theme-primary-100 transition-colors min-h-[44px] touch-manipulation"
               title="Import character from JSON file"
             >
-              Import
+              Importar
             </button>
           </div>
         </div>
@@ -169,7 +169,7 @@ export const CharacterSheet: React.FC<CharacterSheetProps> = ({ character }) => 
         />
         
         <p className="text-base sm:text-lg text-theme-primary-800 opacity-75 mt-2">
-          Level {character.level} • {character.experience} XP
+          Nível {character.level} • {character.experience} XP
         </p>
       </header>
 

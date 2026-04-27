@@ -159,7 +159,7 @@ export const ItemCard: React.FC<ItemCardProps> = ({
             )}
             {item.clearInstructions && (
               <div className="text-xs text-stone-800 mt-auto">
-                <div className="font-semibold mb-1">Clear:</div>
+                <div className="font-semibold mb-1">Limpar:</div>
                 <div className="leading-tight">{item.clearInstructions}</div>
               </div>
             )}
@@ -261,7 +261,7 @@ export const ItemCard: React.FC<ItemCardProps> = ({
         className="absolute bottom-1 right-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 
                    text-theme-primary-600 hover:text-theme-error-600 w-4 h-4 
                    flex items-center justify-center pointer-events-auto"
-        title="Delete item"
+        title="Deletar item"
       >
         <RiDeleteBin6Line size={12} />
       </button>

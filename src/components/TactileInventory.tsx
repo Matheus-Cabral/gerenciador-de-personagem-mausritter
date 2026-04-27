@@ -470,12 +470,12 @@ export const TactileInventory: React.FC<TactileInventoryProps> = ({
 
   return (
     <div className="card inventory-container">
-      <h2 className={`font-medium text-theme-primary-800 mb-4 ${isMobile ? 'text-xl' : 'text-2xl'}`}>Inventory</h2>
+      <h2 className={`font-medium text-theme-primary-800 mb-4 ${isMobile ? 'text-xl' : 'text-2xl'}`}>Inventário</h2>
       
       {selectedItem && isMobile && (
         <div className="mb-4 p-2 bg-theme-primary-100 rounded-lg border border-theme-primary-300">
           <p className="text-sm text-theme-primary-800">
-            Item selected. Tap a grid cell to move it there, or tap the item again to deselect.
+            Item selecionado. Toque em uma célula da grade para movê-lo para lá ou toque no item novamente para desmarcá-lo.
           </p>
         </div>
       )}

@@ -3,10 +3,10 @@
     {
       "name": "Improvised",
       "damage": "d6",
-      "weaponCategory": "improvised",
+      "weaponCategory": "improvisado",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "improvised"
+      "imageKey": "improvisado"
     },
     {
       "name": "Needle",
@@ -33,12 +33,12 @@
       "imageKey": "sword"
     },
     {
-      "name": "Axe",
+      "name": "Machado",
       "damage": "d6/d8",
-      "weaponCategory": "medium",
+      "weaponCategory": "médio",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "axe"
+      "imageKey": "machado"
     },
     {
       "name": "Mace",
@@ -81,12 +81,12 @@
       "imageKey": "sling"
     },
     {
-      "name": "Bow",
+      "name": "Arco",
       "damage": "d8",
-      "weaponCategory": "heavy",
+      "weaponCategory": "pesado",
       "size": "tall",
       "maxUsageDots": 3,
-      "imageKey": "bow"
+      "imageKey": "arco"
     }
   ],
   "armor": [
@@ -125,11 +125,11 @@
       "imageKey": "rations"
     },
     {
-      "name": "Arrows",
+      "name": "Flechas",
       "size": "small",
-      "weaponCategory": "ammunition",
+      "weaponCategory": "Munição",
       "maxUsageDots": 3,
-      "imageKey": "arrows"
+      "imageKey": "flechas"
     },
     {
       "name": "Stones",

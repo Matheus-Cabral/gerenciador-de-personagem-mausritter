@@ -34,10 +34,10 @@ export const InventoryGrid: React.FC<InventoryGridProps> = ({ onGridDrop, onMobi
   const getCellLabel = (x: number, y: number) => {
     if (x === 0) {
       // Paws column - use shorter labels
-      return y === 0 ? 'Main' : 'Off';
+      return y === 0 ? 'Pata principal' : 'Outra pata';
     } else if (x === 1) {
       // Body column
-      return 'Body';
+      return 'Corpo';
     } else {
       // Pack - number sequentially
       // Top row: cells 2,3 become 1,2
@@ -104,24 +104,24 @@ export const InventoryGrid: React.FC<InventoryGridProps> = ({ onGridDrop, onMobi
           // Mobile layout - stacked labels
           <>
             <div className="text-center">
-              <div className="text-xs font-semibold text-theme-primary-700">Carried | Worn | Pack (1-6)</div>
-              <div className="text-xs text-theme-primary-600">Tap to select items</div>
+              <div className="text-xs font-semibold text-theme-primary-700">Carregado | Vestido | Bolsa (1-6)</div>
+              <div className="text-xs text-theme-primary-600">Toque para selecionar itens</div>
             </div>
           </>
         ) : (
           // Desktop layout - inline labels
           <>
             <div className="text-center" style={{width: GRID_CONFIG.cellSize}}>
-              <div className="text-sm font-semibold text-theme-primary-700">Carried</div>
-              <div className="text-xs text-theme-primary-600">Ready to use.</div>
+              <div className="text-sm font-semibold text-theme-primary-700">Carregado</div>
+              <div className="text-xs text-theme-primary-600">Pronto para usar.</div>
             </div>
             <div className="text-center" style={{width: GRID_CONFIG.cellSize}}>
-              <div className="text-sm font-semibold text-theme-primary-700">Worn</div>
-              <div className="text-xs text-theme-primary-600">Quick to ready.</div>
+              <div className="text-sm font-semibold text-theme-primary-700">Vestido</div>
+              <div className="text-xs text-theme-primary-600">Prepara rápido.</div>
             </div>
             <div className="text-center" style={{width: GRID_CONFIG.cellSize * 3 + 4}}>
-              <div className="text-sm font-semibold text-theme-primary-700">Pack</div>
-              <div className="text-xs text-theme-primary-600">Takes time to ready. During combat, requires an action to retrieve.</div>
+              <div className="text-sm font-semibold text-theme-primary-700">Bolsa</div>
+              <div className="text-xs text-theme-primary-600">Demora para preparar, durante combate, gasta uma ação para pegar.</div>
             </div>
           </>
         )}
@@ -149,9 +149,9 @@ export const InventoryGrid: React.FC<InventoryGridProps> = ({ onGridDrop, onMobi
       
       <div className="mt-2 text-sm text-theme-primary-700">
         {isMobile ? (
-          <p>• Tap item to select, tap grid cell to move, tap scratch area to unequip</p>
+          <p>• Toque no item para selecionar, toque na célula do grid para mover, Toque na área pontilhada para remover</p>
         ) : (
-          <p>• Right-click items to rotate • Items snap to grid when dropped</p>
+          <p>• Clique direito para rotacionar • Os itens encaixam na grade quando soltos</p>
         )}
       </div>
     </div>
