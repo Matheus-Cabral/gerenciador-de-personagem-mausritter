@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: command === 'build' ? '/mausritter-character-manager/' : '/',
+  base: command === 'build' ? '/gerenciador-de-personagem-mausritter/' : '/',
 }))
