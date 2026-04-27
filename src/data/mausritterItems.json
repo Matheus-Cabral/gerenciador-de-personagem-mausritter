@@ -1,7 +1,7 @@
 {
   "weapons": [
     {
-      "name": "Improvised",
+      "name": "Improvisado",
       "damage": "d6",
       "weaponCategory": "improvisado",
       "size": "small",
@@ -9,28 +9,28 @@
       "imageKey": "improvisado"
     },
     {
-      "name": "Needle",
+      "name": "Agulha",
       "damage": "d6",
-      "weaponCategory": "light",
+      "weaponCategory": "leve",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "needle"
+      "imageKey": "agulha"
     },
     {
-      "name": "Dagger",
+      "name": "Adaga",
       "damage": "d6",
-      "weaponCategory": "light",
+      "weaponCategory": "Leve",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "dagger"
+      "imageKey": "adaga"
     },
     {
-      "name": "Sword",
+      "name": "Espada",
       "damage": "d6/d8",
-      "weaponCategory": "medium",
+      "weaponCategory": "médio",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "sword"
+      "imageKey": "espada"
     },
     {
       "name": "Machado",
@@ -41,44 +41,44 @@
       "imageKey": "machado"
     },
     {
-      "name": "Mace",
+      "name": "Maça",
       "damage": "d6/d8",
-      "weaponCategory": "medium",
+      "weaponCategory": "médio",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "mace"
+      "imageKey": "maca"
     },
     {
-      "name": "Spear",
+      "name": "Lança",
       "damage": "d10",
-      "weaponCategory": "heavy",
+      "weaponCategory": "pesado",
       "size": "tall",
       "maxUsageDots": 3,
-      "imageKey": "spear"
+      "imageKey": "lanca"
     },
     {
-      "name": "Hookarm",
+      "name": "Arma de Gancho",
       "damage": "d10",
-      "weaponCategory": "heavy",
+      "weaponCategory": "pesado",
       "size": "tall",
       "maxUsageDots": 3,
-      "imageKey": "hookarm"
+      "imageKey": "arma-de-gancho"
     },
     {
-      "name": "Warhammer",
+      "name": "Martelo de Guerra",
       "damage": "d10",
-      "weaponCategory": "heavy",
+      "weaponCategory": "pesado",
       "size": "tall",
       "maxUsageDots": 3,
-      "imageKey": "warhammer"
+      "imageKey": "martelo-de-guerra"
     },
     {
-      "name": "Sling",
+      "name": "Estilingue",
       "damage": "d6",
-      "weaponCategory": "light",
+      "weaponCategory": "leve",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "sling"
+      "imageKey": "estilingue"
     },
     {
       "name": "Arco",
@@ -91,533 +91,533 @@
   ],
   "armor": [
     {
-      "name": "Light Armour",
+      "name": "Armadura Leve",
       "defense": 1,
       "size": "wide",
       "maxUsageDots": 3,
-      "imageKey": "light-armour"
+      "imageKey": "armadura-leve"
     },
     {
-      "name": "Heavy Armour",
+      "name": "Armadura Pesada",
       "defense": 1,
       "size": "tall",
       "maxUsageDots": 3,
-      "imageKey": "heavy-armour"
+      "imageKey": "armadura-pesada"
     }
   ],
   "items": [
     {
-      "name": "Torch",
+      "name": "Tocha",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "torches"
+      "imageKey": "tochas"
     },
     {
-      "name": "Lantern",
+      "name": "Lanterna",
       "size": "small",
       "maxUsageDots": 6,
-      "imageKey": "lantern"
+      "imageKey": "lanterna"
     },
     {
-      "name": "Rations",
+      "name": "Rações",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "rations"
+      "imageKey": "racao"
     },
     {
       "name": "Flechas",
       "size": "small",
-      "weaponCategory": "Munição",
+      "weaponCategory": "munição",
       "maxUsageDots": 3,
       "imageKey": "flechas"
     },
     {
-      "name": "Stones",
+      "name": "Pedras",
       "size": "small",
-      "weaponCategory": "ammunition",
+      "weaponCategory": "munição",
       "maxUsageDots": 3,
       "imageKey": "stones"
     },
     {
-      "name": "Rope",
+      "name": "Corda",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Cookpots",
+      "name": "Panelas",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Bedroll",
+      "name": "Saco de Dormir",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Grappling Hook",
+      "name": "Arpel",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Lockpicks",
+      "name": "Gazuas",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Healing Potion",
-      "size": "small",
-      "maxUsageDots": 1
-    },
-    {
-      "name": "Leather apron",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Awl",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Flour sack",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Rolling pin",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Anchor",
-      "size": "wide",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Dice",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Lucky charm",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Net",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Cage",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Ladle",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Spices",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Tongs",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Basket",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Foraging stick",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Scale",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Ledger",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Compass",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Map",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Flour",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Banner",
-      "size": "tall",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Quill",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Ink",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Prayer book",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Incense",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Signet ring",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Fine clothes",
-      "size": "small",
-      "maxUsageDots": 3
-    },
-    {
-      "name": "Spell scroll",
+      "name": "Poção de Cura",
       "size": "small",
       "maxUsageDots": 1
     },
     {
-      "name": "Crystal",
+      "name": "Avental de Couro",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Black mask",
+      "name": "Furadeira Manual",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Helmet",
+      "name": "Saco de Farinha",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Quiver",
+      "name": "Rolo de massa",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Lute",
+      "name": "Ancora",
       "size": "wide",
       "maxUsageDots": 3
     },
     {
-      "name": "Song book",
+      "name": "Dado",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Saw",
+      "name": "Amuleto da Sorte",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Wood glue",
+      "name": "Rede",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Bandages",
+      "name": "Gaiola",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Herbs",
+      "name": "Concha",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Tools",
+      "name": "Temperos",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Wire",
+      "name": "Pinça",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Hoe",
+      "name": "Cesta",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Vara de Forrageamento",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Escama",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Livro-Razão",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Bússola",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Mapa",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Farinha",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Estandarte",
       "size": "tall",
       "maxUsageDots": 3
     },
     {
-      "name": "Seeds",
+      "name": "Pena",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Story book",
+      "name": "Tinta",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Costume",
+      "name": "Livro de Orações",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Spyglass",
+      "name": "Incenso",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Signal flag",
+      "name": "Anel de Sinete",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Brush",
+      "name": "Roupas Finas",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Magnifying glass",
+      "name": "Pergaminho de Feitiço",
+      "size": "small",
+      "maxUsageDots": 1
+    },
+    {
+      "name": "Cristal",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Satchel",
+      "name": "Mascara Preta",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Seal",
+      "name": "Elmo",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Keys",
+      "name": "Aljava",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Guest book",
+      "name": "Alaúde",
+      "size": "wide",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Livro de canções",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Gears",
+      "name": "Serra",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Tiny tools",
+      "name": "Cola para Madeira",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Vial",
+      "name": "Bandagens",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Mixing rod",
+      "name": "Ervas",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Blueprint",
+      "name": "Ferramentas",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Measuring stick",
+      "name": "Fios",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Wax seal",
+      "name": "Enchada",
+      "size": "tall",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Sementes",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Treaty",
+      "name": "Livro de histórias",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Map case",
+      "name": "Fantasia",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Measuring wheel",
+      "name": "Luneta",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Bookmark",
+      "name": "Bandeira de Sinalização",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Reading glass",
+      "name": "Pincel",
       "size": "small",
       "maxUsageDots": 3
     },
     {
-      "name": "Whistle",
+      "name": "Lupa",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Bolsa",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Selo",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Chaves",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Livro de Visitas",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Engrenagens",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Ferramentas Pequenas",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Frasco",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Vara de Mitura",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Diagrama",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Régua",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Selo de Cera",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Tratado",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Pasta de Mapas",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Roda de Medição",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Marca-página",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Óculos de Leitura",
+      "size": "small",
+      "maxUsageDots": 3
+    },
+    {
+      "name": "Apito",
       "size": "small",
       "maxUsageDots": 3
     }
   ],
   "spells": [
     {
-      "name": "Fireball",
+      "name": "Bola de Foga",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "spell01"
+      "imageKey": "feitico01"
     },
     {
-      "name": "Heal",
+      "name": "Cura",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "spell02"
+      "imageKey": "feitico02"
     },
     {
-      "name": "Magic Missile",
+      "name": "Mísseis Mágicos",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "spell03"
+      "imageKey": "feitico03"
     },
     {
-      "name": "Fear",
+      "name": "Medo",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "spell04"
+      "imageKey": "feitico04"
     },
     {
-      "name": "Darkness",
+      "name": "Escuridão",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "spell05"
+      "imageKey": "feitico05"
     },
     {
-      "name": "Restore",
+      "name": "Restaurar",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "spell01"
+      "imageKey": "feitico01"
     },
     {
-      "name": "Be Understood",
+      "name": "Ser Entendido",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "spell02"
+      "imageKey": "feitico02"
     },
     {
-      "name": "Ghost Beetle",
+      "name": "Besouro Fantasma",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "spell03"
+      "imageKey": "feitico03"
     },
     {
-      "name": "Light",
+      "name": "Luz",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "spell04"
+      "imageKey": "feitico04"
     },
     {
-      "name": "Invisible Ring",
+      "name": "Anel Invísivel",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "spell05"
+      "imageKey": "feitico05"
     },
     {
-      "name": "Knock",
+      "name": "Arrombar",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "spell01"
+      "imageKey": "feitico01"
     },
     {
-      "name": "Grease",
+      "name": "Graxa",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "spell02"
+      "imageKey": "feitico02"
     },
     {
-      "name": "Grow",
+      "name": "Crescer",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "spell03"
+      "imageKey": "feitico03"
     },
     {
-      "name": "Invisibility",
+      "name": "Invisibilidade",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "spell04"
+      "imageKey": "feitico04"
     },
     {
-      "name": "Catnip",
+      "name": "Erva-gateira",
       "size": "small",
       "maxUsageDots": 3,
-      "imageKey": "spell05"
+      "imageKey": "feitico05"
     }
   ],
   "conditions": [
     {
-      "name": "Exhausted",
-      "description": "You are weary and need rest.",
-      "clearInstructions": "Sleep for 6 hours in a safe place",
+      "name": "Exausto",
+      "description": "Você está cansado e precisa descansar.",
+      "clearInstructions": "Durma por 6 horas (uma vigília completa) em um lugar seguro.",
       "size": "small"
     },
     {
-      "name": "Injured",
-      "description": "You have suffered physical harm.",
-      "clearInstructions": "Receive medical attention or heal naturally over time",
+      "name": "Ferido",
+      "description": "Desvantagem em testes de FOR & DES",
+      "clearInstructions": "Após descanso completo, tratamento médico ou feitiço de cura",
       "size": "small"
     },
     {
-      "name": "Frightened",
-      "description": "You are overcome with fear.",
-      "clearInstructions": "Confront your fear or find safety and comfort",
+      "name": "Amedrontado",
+      "description": "Salvaguarda de VON para se aproximar da fonte do medo.",
+      "clearInstructions": "Enfrente seu medo ou encontre segurança e conforto. (Descanso curto)",
       "size": "small"
     },
     {
-      "name": "Hungry",
-      "description": "You need food and sustenance.",
-      "clearInstructions": "Eat a ration or proper meal",
+      "name": "Fome",
+      "description": "Você precisa de comida e sustento.",
+      "clearInstructions": "Coma uma ração ou uma refeição adequada.",
       "size": "small"
     },
     {
-      "name": "Mad",
-      "description": "Your mind is affected by strange magic.",
-      "clearInstructions": "Rest in safety or receive magical healing",
+      "name": "Drenado",
+      "description": "Desvantagem em testes de VON",
+      "clearInstructions": "Durma por 6 horas (uma vigília completa) em um lugar seguro.",
       "size": "small"
     }
   ],
   "pipPurse": {
-    "name": "Pip Purse",
+    "name": "Saco de Grãos",
     "size": "small",
     "pipValue": 0,
     "maxPipValue": 250,
-    "imageKey": "pip-purse"
+    "imageKey": "saco-de-grao"
   }
 }
